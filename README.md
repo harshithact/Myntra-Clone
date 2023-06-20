@@ -9,14 +9,14 @@ Welcome to the Myntra Clone project! This project aims to recreate the Myntra we
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-*Description of screenshot 1.*
+![Screenshot 1](screenshots/login.png)
 
-![Screenshot 2](screenshots/screenshot2.png)
-*Description of screenshot 2.*
+![Screenshot 2](screenshots/home.png)
 
-![Screenshot 3](screenshots/screenshot3.png)
-*Description of screenshot 3.*
+![Screenshot 3](screenshots/shopping.png)
+
+![Screenshot 4](screenshots/helpcenter.png)
+
 
 ## Usage
 Browse the different categories of clothes and accessories.
