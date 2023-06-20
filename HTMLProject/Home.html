@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+     .bordered-image {
+          border: 2px solid black;
+        }
+        
+
+.box {
+  background: url(offer.jpg) right/cover no-repeat;  /* Add an image as the box's background */
+}
+.box {
+  background: url(offer2.jpg) right/cover no-repeat;  /* Add an image as the box's background */
+}
+.box {
+  background: url(offer3.jpg) right/cover no-repeat;  /* Add an image as the box's background */
+}
+       .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+  .Search-box {
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    padding: 20px; /* Add padding inside the box */
+  }
+  h3 {
+      color: rgb(255, 0, 140); /* Change the color value as per your requirement */
+    }
+        
+        h5 {
+      color: rgb(0, 170, 255); /* Change the color value as per your requirement */
+    }
+    
+   
+</style>
+<script>
+  function redirectToPage() {
+    var searchTerm = document.getElementById("searchBar").value.toLowerCase();
+    
+    if (searchTerm === "men") {
+      window.location.href = "Men.html";
+    } else if (searchTerm === "women") {
+      window.location.href = "women.html";
+    } else if (searchTerm === "kids") {
+      window.location.href = "Kids.html";
+    } else if (searchTerm === "beauty") {
+      window.location.href = "Beauty.html";
+    } else {
+      alert("No result found.");
+    }
+  }
+</script>
+</head>
+<body text="aqua">
+  <img src="logo.jpg" height="80px">
+    <div class="navigation">
+        <ul>
+          <li><a href="Men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="Kids.html">Kids</a></li>
+          <li><a href="Beauty.html">Beauty</a></li>
+          <li><a href="About.html">About</a></li>
+          
+          <input type="text" id="searchBar" placeholder="Search for products">
+          <button onclick="redirectToPage()">Search</button>
+          </div>
+        </ul>
+      
+        
+      <marquee bgcolor="purple"  height="20px" width="1250px" direction="left" scrollamount="15" behavior="scroll" scrolldelay="130">HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS! HURRY UP, CRAZY DEALS!</marquee>
+      <h3 align="center">REFRESH YOUR WARDROBE</h3>
+      <h5 align="center"><i>Find Outfits For Every Occation</i></h5> <br><br>
+      
+      <img class="bordered-image" id="picture1" src="offer.jpg" height="200px" width="400px">
+      <img class="bordered-image" id="picture1" src="offer3.jpg" height="200px" width="400px">
+      <img class="bordered-image" id="picture1" src="offer2.jpg" height="200px" width="400px">
+     
+      
+      
+      
+      
+</body>
+</html>

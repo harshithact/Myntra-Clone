@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+</head>
+<style>
+    .bordered-image {
+      border: 2px solid black;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      gap: 20px;
+    }
+    .image-container img {
+      height: 300px;
+      width: 300px;
+    }
+    .price-tag {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+    }
+    h1{
+       background-color:rgb(226, 43, 189);
+    }
+    h5 {
+      color: rgb(255, 0, 140); /* Change the color value as per your requirement */
+    }
+    
+  </style>
+  <script>
+    function redirectToPage() {
+      var searchTerm = document.getElementById("searchBar").value.toLowerCase();
+      
+      if (searchTerm === "men") {
+        window.location.href = "Men.html";
+      } else if (searchTerm === "women") {
+        window.location.href = "women.html";
+      } else if (searchTerm === "kids") {
+        window.location.href = "Kids.html";
+      } else if (searchTerm === "beauty") {
+        window.location.href = "Beauty.html";
+      } else {
+        alert("No result found.");
+      }
+    }
+  </script>
+<body>
+        <img src="logo.jpg" height="80px">
+        <input type="text" id="searchBar" placeholder="Search for products">
+        <button onclick="redirectToPage()">Search</button>
+        <h1 align="center">Unique Offers</Label></h1>
+          <h5 align="center">70% off on Causual Shirts</h5>
+          <div class="image-container">
+            <div>
+        <img class="bordered-image" id="picture1" src="mimage1.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹540<br> <i style="color:rgb(255, 0, 153);">Casual navy blue checks shirt for men </i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture2" src="mimage2.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹699<br> <i style="color: rgb(255, 0, 153);">Navy blue casual shirt for men</i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage3.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹749<br> <i style="color: rgb(255, 0, 153);">Blue casual shirt for men</i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage4.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹459<br> <i style="color: rgb(255, 0, 153);">Blue casual shirt with prints for men </i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage5.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹549<br> <i style="color: rgb(255, 0, 153);">Maroon and black t-shirt with white stripes for men</i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage6.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹449<br> <i style="color: rgb(255, 0, 153);">White t-shirt with purple and grey stripes for men</i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage7.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹359<br> <i style="color: rgb(255, 0, 153);">Black t-shirt for men</i></span>
+      </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="mimage8.jpg" height="200px" width="300px">
+        <span class="price-tag">Price:₹399<br> <i style="color: rgb(255, 0, 153);">Yellow t-shirt for men</i></span>
+      </div>
+        <div class="search-bar">
+    </div>
+</body>
+</html>

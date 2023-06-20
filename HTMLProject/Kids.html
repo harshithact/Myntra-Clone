@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids</title>
+<style>
+
+    .bordered-image {
+      border: 2px solid black;
+    }   
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+
+    
+    .image-container img {
+      height: 300px;
+       width: 300px;
+
+    }
+    .price-tag {
+          display: block;
+          text-align: center;
+          margin-top: 5px;
+    }
+    
+    
+    h5 {
+      color: rgb(255, 0, 140); /* Change the color value as per your requirement */
+    }
+    
+    h1{
+       background-color:rgb(115, 182, 229);
+       }
+  
+  </style>
+  <script>
+  function redirectToPage() {
+    var searchTerm = document.getElementById("searchBar").value.toLowerCase();
+    
+    if (searchTerm === "men") {
+      window.location.href = "Men.html";
+    } else if (searchTerm === "women") {
+      window.location.href = "women.html";
+    } else if (searchTerm === "kids") {
+      window.location.href = "Kids.html";
+    } else if (searchTerm === "beauty") {
+      window.location.href = "Beauty.html";
+    } else {
+      alert("No result found.");
+    }
+  }
+</script>
+</head>
+<body>
+    <img src="logo.jpg" height="80px">
+        
+    <input type="text" id="searchBar" placeholder="Search for products">
+    <button onclick="redirectToPage()">Search</button>
+          
+    <h1 align="center">Sale is Live</Label></h1>
+    <h5 align="center">50% off on AXIX-BANK credit card</h5>
+    <div class="image-container">
+       <div>
+      <img class="bordered-image" id="picture1" src="kimage1.jpg" height="300px" width="300px">
+      <span class="price-tag">Price:₹572<br> <i style="color: orangered;">girls blue kneelength frock</i></span>
+    </div>
+    <div>
+      <img class="bordered-image" id="picture2" src="kimage2.jpg" height="300px" width="300px">
+     <span class="price-tag">Price:₹359<br><i style="color: orangered;">girls pink layered frock</i></span>
+    </div>
+    <div>
+      <img class="bordered-image" id="picture3" src="kimage8.jpg" height="300px" width="300px">
+      <span class="price-tag">Price:₹399<br><i style="color: orangered;">boys shirt with pant</i></span>
+    </div>
+    <div>
+      <img class="bordered-image" id="picture3" src="kimage4.jpg" height="300px" width="300px">
+      <span class="price-tag">Price:₹899<br><i style="color: orangered;">blue and pink lehenga for girls</i></span>
+    </div>
+        <div>
+       <img class="bordered-image" id="picture3" src="kimage5.jpg" height="300px" width="300px">
+       <span class="price-tag">Price:₹982<br><i style="color: orangered;">maroon girls gown</i></span>
+    </div>
+      <div>
+        <img class="bordered-image" id="picture3" src="kimage6.jpg" height="300px" width="300px">
+        <span class="price-tag">Price:₹400<br><i style="color: orangered;">sky blue casual wear girls frock </i></span>
+    </div>
+        <div>
+        <img class="bordered-image" id="picture3" src="kimage7.jpg" height="300px" width="300px">
+        <span class="price-tag">Price:₹650<br> <i style="color: orangered;">girls pink gown with dhupatta</i></span>
+    </div>
+        <div>
+        <img class="bordered-image" id="picture3" src="kimage3.jpg" height="300px" width="300px">
+        <span class="price-tag">Price:₹576<br><i style="color: orangered;">white and pink layred gown for girls</i></span>
+    </div>
+        <div class="search-bar">
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <style>
+        .bordered-image {
+          border: 2px solid black;
+        }
+      
+
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+        .image-container img {
+          height: 300px;
+          width: 300px;
+        }
+        .price-tag {
+          display: block;
+          text-align: center;
+          margin-top: 5px;
+        }
+        h1{
+           background-color:rgb(226, 43, 58);
+       }
+       h5 {
+      color: rgb(255, 0, 140); /* Change the color value as per your requirement */
+    }
+    
+      </style>
+      <script>
+      function redirectToPage() {
+        var searchTerm = document.getElementById("searchBar").value.toLowerCase();
+        
+        if (searchTerm === "men") {
+          window.location.href = "Men.html";
+        } else if (searchTerm === "women") {
+          window.location.href = "women.html";
+        } else if (searchTerm === "kids") {
+          window.location.href = "Kids.html";
+        } else if (searchTerm === "beauty") {
+          window.location.href = "Beauty.html";
+        } else {
+          alert("No result found.");
+        }
+      }
+    </script>
+</head>
+<body>
+    <img src="logo.jpg" height="80px"> <br>
+    <input type="text" id="searchBar" placeholder="Search for products">
+    <button onclick="redirectToPage()">Search</button>
+
+
+    <h1 align="center">STEAL THESE DEALS</Label></h1>
+    <h5 align="center">FLAT 30% OFF* +<br>FREE GIFT ON ORDERS OF ₹499</h5>
+    <div class="image-container">
+      <div>
+    <img class="bordered-image" id="picture1" src="bimage1.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹7,550,<br> <i style="color: orangered;">mac Lipsticks combo 5 shades</i></span>
+  </div>
+  <div>
+    <img class="bordered-image" id="picture2" src="bimage2.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹4,200,<br> <i style="color: orangered;">Mabelline liquid matte Lipsticks, combo 7 shades</i></span>
+  </div>
+  <div>
+
+    <img class="bordered-image" id="picture3" src="bimage3.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹4,800,<br> <i style="color: orangered;">Lakme 9 to 5 matte + primer Lipsticks, combo 12 shades</i></span>
+  </div>
+  <div>
+
+    <img class="bordered-image" id="picture3" src="bimage4.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹3,000,<br> <i style="color: orangered;">Creme Lipsticks Revlon, combo 5 shades</i></span>
+  </div>
+  <div>
+
+    <img class="bordered-image" id="picture1" src="bimage5.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹1500,<br> <i style="color: orangered;">Floral perfumes, combo pack of 5</i></span>
+  </div>
+  <div>
+
+    <img class="bordered-image" id="picture2" src="bimage6.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹4,999,<br> <i style="color: orangered;">Chanel-N 5-No.5EDP 100 ml</i></span>
+  </div> 
+  <div>
+    <img class="bordered-image" id="picture3" src="bimage7.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹2,999,<br> <i style="color: orangered;">Men's perfume combo pack of 4</i></span>
+  </div>
+  <div>
+    <img class="bordered-image" id="picture3" src="bimage8.jpg" height="300px" width="300px">
+    <span class="price-tag">Price:₹5,500,<br> <i style="color: orangered;">Gucci perfume 100ml</i></span>
+  </div>
+</div>
+</body>
+</html>
